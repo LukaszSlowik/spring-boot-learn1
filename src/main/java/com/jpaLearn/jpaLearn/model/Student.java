@@ -6,19 +6,22 @@ public class Student {
 
     private  String firstName;
     private  String lastName;
+    private int age;
     private  String email;
     private LocalDate dateOfBirth;
-    private int age;
 
 
 
 
-    public Student(String firstName, int age, LocalDate dateOfBirth, String email, String lastName) {
+    public Student(String firstName, String lastName, int age, String email, LocalDate dateOfBirth) {
         this.firstName = firstName;
-        this.age = age;
-        this.dateOfBirth = dateOfBirth;
-        this.email = email;
         this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+    }
+    //empty constructor
+    public Student() {
     }
 
     public int getAge() {
