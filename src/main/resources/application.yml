@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: jpaLearn
+  datasource:
+    url: jdbc:h2:mem:lukasz
+    driverClassName: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
